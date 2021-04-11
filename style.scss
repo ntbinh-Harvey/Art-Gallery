@@ -1,0 +1,14 @@
+$font-stack: 'poppins', sans-serif;
+$primary-color: #F5F5F5;
+$secondary-color: #F4F4F4;
+
+body {
+    font-family : $font-stack;
+}
+.container-header {
+    &.navbar {
+        &.container-fluid {
+            background-color: $primary-color;
+        }
+    }
+}

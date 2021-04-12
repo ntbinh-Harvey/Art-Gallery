@@ -1,14 +1,46 @@
-$font-stack: 'poppins', sans-serif;
+$primary-font: 'poppins', sans-serif;
+$secondary-font: 'Playfair Display', serif; 
 $primary-color: #F5F5F5;
 $secondary-color: #F4F4F4;
+$container-width: 1336px;
 
 body {
-    font-family : $font-stack;
+    font-family : $primary-font;
 }
 .container-header {
-    &.navbar {
-        &.container-fluid {
-            background-color: $primary-color;
+    width: $container-width;
+    .navbar {
+        background-color: $primary-color;
+        a {
+            font-size: 12.5px;
         }
+    }
+}
+.container-content {
+    height: 85vh;
+    width: $container-width;
+    .item1 {
+        font-size: 80px; 
+        font-family: $secondary-font;
+    }
+    .front-page-img {
+        width:100%; 
+        height:580px;
+    }
+    .display {
+        font-size: 93.5px;
+        font-family: $secondary-font;
+    }
+    .image-carousel {
+        width: 400px;
+        height: 700px;
+    }
+    .text-content-main {
+        font-size: 21.5px;
+        color: #b89e4f;
+    }
+    .image-part-3 {
+        width: 100%;
+        height: 500px;
     }
 }
